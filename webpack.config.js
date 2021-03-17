@@ -106,6 +106,14 @@ module.exports = {
       filename: "product.html",
       template: "./src/product.html",
     }),
+
+
+    new HtmlWebpackPlugin({
+      filename: "checkout.html",
+      template: "./src/checkout.html",
+    }),
+
+
     new MiniCssExtractPlugin({ filename: "css/style.css" }),
     new OptimizeCssAssetsPlugin({}),
   ],
