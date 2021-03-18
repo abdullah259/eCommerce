@@ -72,4 +72,49 @@ $(function () {
         $('#total-price-for-all-product').text(totalPriceForAllProducts + '$');
     }
     
+
+    var citiesByCountry = {
+        sa: ['جدة','الرياض'],
+        eg: ['القاهرة','الاسكندرية'],
+        jo: ['عمان' ,'الزرقاء'],
+        sy: ['دمشق' , 'حلب' , 'حماه']
+    }
+    //when the country change it
+    $('#form-checkout select[name="country"]').change(function() {
+        //bring the value for the country 
+        var country = $(this).val();
+        //bring cities this country 
+        var cities = citiesByCountry[country];
+
+        //reomve any cities inside this 
+        $('#form-checkout select[name="city"]').empty();
+        // add the select اختر مدينه because we remove it when we did before this step 
+        $('#form-checkout select[name="city"]').append(
+            '<option disabled selected value="">اختر المدينة</option>'
+        );
+
+        //add the cities to country
+        cities.forEach(function(city){
+            var newOption = $('<option></option>');
+            newOption.text(city);
+            newOption.val(city);
+            $('#form-checkout select[name="city"]').append(newOption);
+        });
+    });
+
+    $('#form-checkout input[name="payment-method"]').change(function() {
+        var paymentMethod = $(this).val();
+
+        if(paymentMethod === 'on_delivary') {
+
+            //اذا كانت عند الاستلام ، فعطل  حقول بطاقة الائتمان
+            $('#credit-card-info input').prop('disabled', true);
+
+        }else{
+            //والا ففعلها
+            $('#credit-card-info input').prop('disabled', false);
+        }
+
+        $('#credit-card-info input').toggle();
+    });
 });
