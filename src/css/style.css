@@ -723,11 +723,97 @@ payment page *********/
 
 
 
+/*
+**************************************
+search.html ******************************
+**/
+
+#form-advanced-search {
+  border: 1px solid #ebebeb;
+  padding-bottom: 20px;
+  display: table;
+}
+
+#form-advanced-search .custom-panel {
+  border: none;
+  padding: 5px;
+}
+
+.custom-panel .card-header {
+  background-color: transparent;
+  padding: 7px 10px 13px;
+  margin-bottom: 15px;
+}
+
+.custom-list-group>.list-group-item {
+  border: none;
+  padding: 0 10px 14px 0;
+}
+
+.custom-list-group>.list-group-item:last-child {
+  padding: 0 10px 0 0 ;
+}
+#form-advanced-search label {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.ui-slider {
+  margin: 25px 0 15px;
+  height: 2px !important;
+}
+
+.ui-slider .ui-slider-handle {
+  background-color: #f8ad47 !important;
+  border: none !important;
+  border-radius: 50%;
+  height: 12px !important;
+  width: 12px !important;
+  top: -6px !important;
+}
+
+.ui-slider .ui-slider-range {
+  border: 1px solid #f8ad47 !important;
+  top: -1px !important;
+}
 
 
+.custom-pagination li a {
+  border:solid 1px #ebebeb;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  margin-right: 3px;
+  margin-left: 3px;
+  color: #c2c2c2;
+  transition: all 0.3s ease;
+  display: inline-block;
+  text-align: center;
+}
+
+.custom-pagination li.active a {
+  background-color: #f8ad47;
+  color: #fff;
+  border-color: #f8ad47;
+}
+
+.custom-pagination li a:active,
+.custom-pagination li a:focus,
+.custom-pagination li a:hover
+ {
+  color: #ab7731;
+  border-color: #ab7731;
+}
 
 
+.custom-pagination {
+  margin : 25px 0;
+}
 
+#search-resault .custom-thumbnail {
+  margin-right: -8px;
+  margin-left: -8px;
+}
 
 
 
@@ -827,6 +913,15 @@ payment page *********/
     margin: 10px;
     line-height: 40px;
     font-size: 20px;
+  }
+
+
+
+  /*search page*/
+  .ui-slider .ui-slider-handle {
+    height: 20px !important;
+    width: 20px !important;
+    top: -10px !important;
   }
 }
 
