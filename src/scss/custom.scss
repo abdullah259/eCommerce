@@ -1,4 +1,6 @@
-$my-color: #000;
-body {
-    background-color: $my-color;
-}
+$theme-colors: (
+  "primary": #f8ad47,
+);
+
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
