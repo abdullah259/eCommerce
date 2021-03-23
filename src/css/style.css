@@ -142,7 +142,6 @@ body {
   top: -10px;
   right: -10px; 
   background-color: #f7f8f3;
-  width: ;
 }
 #carousel-featured .product-details .custom-btn-primary {
   color: #f8ad47;
@@ -648,6 +647,10 @@ h1.custom-heading {
 
 .custom-table th:first-child , .custom-table td:first-child {
   width: 50%;
+}
+
+.custom-table th:not(:first-child), .custom-table td:not(:first-child) {
+  text-align: center;
 }
 
 .custom-table th {
