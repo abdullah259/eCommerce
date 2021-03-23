@@ -1,0 +1,26 @@
+@import './varbalues';
+
+.sale {
+    background-color: $brand-blue;
+    color: $brand-white;
+    font-weight: bold;
+    position: absolute;
+
+
+
+}
+.sale.large {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    left: -15px;
+    top: -15px;
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+    transform: rotate(-25deg);
+    font-size: 130%;
+    padding: 35px;
+    line-height: 90%;
+    flex-direction: column;
+}
